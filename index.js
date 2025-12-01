@@ -20,3 +20,34 @@ app.use(express.static(path.join(__dirname, 'style')));
 // setting up data to use for my fitness app
 app.locals.healthData = {healthName: "Fitness Galore"}
 
+// setting up database and making it global so it can be accessed
+const db = mysql.createPool({
+    host: process.env.HEALTH_HOST,
+    user: process.env.HEALTH_USER,
+    password: process.env.HEALTH_PASSWORD,
+    database: process.env.HEALTH_DATABASE,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0,
+});
+global.db = db
+
+//creating session and it has to go in front of routes
+app.use(session({
+    secret: 'ramdomfitness',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        expires: 300000   // will log you out after 5 min of inactivity
+    }
+}));
+
+// making sanitizer available to use and it has to be before the routes
+app.use(expressSanitizer());
+
+// loading the route handlers so that it can be accessdd.
+
+
+//start the app listening
+app.listen(port, () => console.log(`Fitness Galore listening on port ${port}!!!`));
+
