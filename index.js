@@ -18,5 +18,5 @@ app.use(express.urlencoded({extended: true}));
 // connecting css file so that it can be used
 app.use(express.static(path.join(__dirname, 'style')));
 // setting up data to use for my fitness app
-app.locals.shopData = {shopName: "Fitness Galore"}
+app.locals.healthData = {healthName: "Fitness Galore"}
 
