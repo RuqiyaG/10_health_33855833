@@ -2,6 +2,15 @@
 const express = require("express")
 const router = express.Router()
 
+// redirects to log in page
+const redirectLogin = (req, res, next) => {
+    if(!req.session.userId) {
+        res.redirect('/users/login') 
+    } else {
+        next ();
+    }
+}
+
 // handling routes
 router.get('/',function(req, res, next){
     res.render('index.ejs')
