@@ -10,6 +10,12 @@ router.get('/login', function(req, res, next) {
     res.render("login.ejs");
 });
 
+// need to add forgotten password
+//need to add search for leg,arms,back excersing
+// search for healthy recipes
+// add some api with dynamics and reccomend excercise to do if it warm or cold
+// imrove on sanitisation
+//improve search
 
 
 
