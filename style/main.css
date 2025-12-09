@@ -1,0 +1,25 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    color: black;
+    text-align: center;
+}
+
+.buttonA {
+    color: white;
+    text-align: center;
+
+}
+
+.buttonB {
+    color: blue;
+    text-align: center;
+}

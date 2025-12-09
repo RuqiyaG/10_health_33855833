@@ -1,5 +1,3 @@
-# Create database script for Berties books
-
 # Create the database
 CREATE DATABASE IF NOT EXISTS health;
 USE health;
@@ -17,7 +15,9 @@ CREATE TABLE IF NOT EXISTS users (
 
 CREATE TABLE IF NOT EXISTS appointments (
     id               INT AUTO_INCREMENT,
+    name             VARCHAR(255) NOT NULL,
     appDate          DATETIME NOT NULL,
+    appTime          DATETIME NOT NULL,
     appInfo          TEXT
     PRIMARY KEY(id));
     
