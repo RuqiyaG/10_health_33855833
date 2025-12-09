@@ -55,8 +55,8 @@ app.use('/users', usersRoutes)
 const appointRoutes = require('./routes/appointment')
 app.use('/appointment', appointRoutes)
 
-const searchRoutes = require('./routes/search')
-app.use('/search', searchRoutes)
+const searchRoutes = require('./routes/find')
+app.use('/find', searchRoutes)
 
 //start the app listening
 app.listen(port, () => console.log(`Fitness Galore listening on port ${port}!!!`));
