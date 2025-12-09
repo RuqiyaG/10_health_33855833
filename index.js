@@ -52,6 +52,9 @@ app.use('/', mainRoutes)
 const usersRoutes = require('./routes/users')
 app.use('/users', usersRoutes)
 
+const appointRoutes = require('./routes/appointment')
+app.use('/appointment', appointRoutes)
+
 //start the app listening
 app.listen(port, () => console.log(`Fitness Galore listening on port ${port}!!!`));
 
