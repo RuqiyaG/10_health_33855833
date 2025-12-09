@@ -46,7 +46,11 @@ app.use(session({
 app.use(expressSanitizer());
 
 // loading the route handlers so that it can be accessdd.
+const mainRoutes = require("./routes/main")
+app.use('/', mainRoutes)
 
+const usersRoutes = require('./routes/users')
+app.use('/users', usersRoutes)
 
 //start the app listening
 app.listen(port, () => console.log(`Fitness Galore listening on port ${port}!!!`));
