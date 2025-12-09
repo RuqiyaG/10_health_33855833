@@ -23,4 +23,4 @@ CREATE TABLE IF NOT EXISTS appointments (
     
 
 CREATE USER IF NOT EXISTS 'health_app'@'localhost' IDENTIFIED BY 'qwertyuiop'; 
-GRANT ALL PRIVILEGES ON berties_books.* TO ' health_app'@'localhost';
+GRANT ALL PRIVILEGES ON health.* TO ' health_app'@'localhost';
