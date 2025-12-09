@@ -11,7 +11,7 @@ const redirectLogin = (req, res, next) => {
     }
 }
 
-router.get('/bookapp',function(req, res, next){
+router.get('/bookapp', redirectLogin, function(req, res, next){
     res.render('appointment.ejs')
 });
 
