@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style/main.css">
-    <title><%=healthData.healthName%></title>
+    <title>Book at <%=healthData.healthName%></title>
 </head>
 <body>
     <h1>Book Appointment</h1>
     <p><a href="/">HOME</a></p>
 
-    <form action="" method="post">
+    <form action="/confirmapp" method="post">
         <p>Name: <input type="text" id="name" name="name" required></p>
         <p>Date: <input type="date" id="date" name="date" required></p>
         <p>Time: <input type="time" id="time" name="time" required></p>

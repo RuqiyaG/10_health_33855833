@@ -16,10 +16,18 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS appointments (
     id               INT AUTO_INCREMENT,
     name             VARCHAR(255) NOT NULL,
-    appDate          DATETIME NOT NULL,
-    appTime          DATETIME NOT NULL,
-    appInfo          TEXT
+    appDate          DATE NOT NULL,
+    appTime          TIME NOT NULL,
+    appInfo          TEXT,
     PRIMARY KEY(id));
+
+CREATE TABLE IF NOT EXISTS exercises (
+    id                INT AUTO_INCREMENT,
+    name              VARCHAR(255) NOT NULL,
+    description       TEXT,
+    category          VARCHAR(255),
+    PRIMARY KEY(id));
+
     
 
 CREATE USER IF NOT EXISTS 'health_app'@'localhost' IDENTIFIED BY 'qwertyuiop'; 

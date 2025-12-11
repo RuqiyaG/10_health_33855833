@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=healthData.healthName%> Members</title>
+</head>
+<body>
+    <h1>Members at Fitness Galore</h1>
+    <% for(let i = 0; i < users.length; i++){ %>
+    <li>Username:<%= users[i].username %> --
+        First Name:<%= users[i].first %> --
+        Last Name:<%= users[i].last %> --
+        Email:<%= users[i].email %> 
+    </li>
+     <% } %>
+</body>
+</html>
