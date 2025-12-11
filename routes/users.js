@@ -104,12 +104,9 @@ router.get('/listmembers', redirectLogin, function (req, res, next) {
 
 // need to add forgotten password
 //need to add search for leg,arms,back excersing
-// search for healthy recipes
 // add some api with dynamics and reccomend excercise to do if it warm or cold
 // imrove on sanitisation
 //improve search
-
-
 
 // export router so index.js can accsess it
 module.exports = router
