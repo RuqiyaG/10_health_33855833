@@ -19,8 +19,12 @@ router.get('/register', function (req, res, next) {
 });
 
 router.post('/registered', 
-    [check('email').isEmail(), 
-    check('username').isLength({min: 1, max: 20})], 
+    [check('email').isEmail().withMessage('provide a valid email').notEmpty().withMessage('email is required'), 
+    check('first').notEmpty().withMessage('first Name is required'),
+    check('last').notEmpty().withMessage('last Name is required'),
+    check('username').isLength({min: 1, max: 20}).withMessage('username required must be within 1-20 characters'),
+    check('password').isLength({min: 8}).withMessage('password is required and must be at least 8 characters')
+    ], 
     function (req, res, next) {
     
     const errors = validationResult(req);
@@ -46,8 +50,8 @@ router.post('/registered',
                return next(err)
             }
             // message that will show up in browser to show successful.
-            let response = ' Hello '+ req.body.first + ' '+ req.body.last +' you are now registered!  We will send an email to you at ' + req.body.email
-            response += 'Your password is:'+ " " + req.body.password +  'and your hashed password is:'+ " " + hashedPassword
+            let response = ' Hello '+ req.body.first + ' '+ req.body.last + ' ' +' you are now registered!  We will send an email to you at ' + ' ' + req.body.email
+            response += 'Your password is:'+ " " + req.body.password + ' ' + 'and your hashed password is:'+ " " + hashedPassword
 
             res.send(response) 
         });
