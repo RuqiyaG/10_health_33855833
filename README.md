@@ -12,7 +12,7 @@ Visit my links.txt file
 
 Access control added to  member list and booking appointments.
 
-Sanitization added to last name and username:
+Sanitization added to first name,last name, username and email:
 
 
 # STRUCTURE:
@@ -59,4 +59,4 @@ BOOK APPOINTMENT
 Users can search excercises to do. has categories legs, back, arms and core
 Logout
 
-User will be logged out of their account if pressed and if user is inactive after
+User will be logged out of their account if pressed and if user is inactive after 5 min

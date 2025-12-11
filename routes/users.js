@@ -29,7 +29,7 @@ router.post('/registered',
     }
     else {
         const plainPassword = req.body.password;
-        const username = req.body.username;
+        const username = req.sanitize(req.body.username);
         const first = req.sanitize(req.body.first);
         const last = req.sanitize(req.body.last);
         const email = req.sanitize(req.body.email);
