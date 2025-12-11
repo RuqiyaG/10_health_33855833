@@ -52,6 +52,7 @@ Name: --
 Date: --
 Time: --
 Reason: --
+BOOK APPOINTMENT
 
 # Search
 
