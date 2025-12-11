@@ -15,9 +15,9 @@ Access control added to  member list and booking appointments.
 Sanitization added to last name and username:
 
 
-STRUCTURE:
+# STRUCTURE:
 
-Fitness Galore
+# Fitness Galore
 
 Log in
 Register
@@ -27,16 +27,16 @@ LogOut
 Book Appointment
 Members
 
-About
+# About
 brief intro/welcome
 
-Log in
+# Log in
 
 USERNAME: --
 PASSWORD: --
 Log in
 
-REGISTER
+# REGISTER
 
 FIRST NAME: --
 LAST NAME: --
@@ -45,15 +45,15 @@ USERNAME: --
 PASSWORD: --
 register
 
-Book appointment
+# Book appointment
 
-whatver cpncern you have you can book an appointment
+Whatver cpncern you have you can book an appointment
 Name: --
 Date: --
 Time: --
 Reason: --
 
-Search
+# Search
 
 Users can search excercises to do. has categories legs, back, arms and core
 Logout
