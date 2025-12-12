@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style/main.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
     <title>Search in <%=healthData.healthName%></title>
 </head>
 <body>
     <h1>Search <%=healthData.healthName%> for excercises</h1>
     <p><a href="/">HOME</a></p>
     <div>
-     <form action="" method="GET">
+     <form action="/search-results" method="GET">
         <input  class="" type="text" id="search-box" name="search-text">
         <input class="buttonA" type="submit" value="search">
      </form>

@@ -29,7 +29,29 @@ router.get('/logout', redirectLogin, (req, res) => {
     })
 })
 
+router.get('/weather', function(req, res, next){
+    let apiKey = '7c8b4261d015d7bd4f3ba8f9f9968a82' // check back
+    let city = 'london'
+    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
 
+    request(url, function(err, response, body){
+        if(err){
+            next(err)
+        } else {
+            //res.send(body)
+            var weather = JSON.parse(body)
+            if(weather!==undefined && weather.main!==undefined) {
+               var wmsg = 'It is' + ' ' + weather.main.temp + ' ' + 'degrees in' + ' ' + weather.name + "! <br> The humidity now is"+ ' ' + weather.main.humidity;
+               res.send(wmsg);
+            } else {
+                res.send('No data found');
+            }
+        } 
+        
+    
+    });
+
+})
 
 
 // export router so index.js can accsess it
