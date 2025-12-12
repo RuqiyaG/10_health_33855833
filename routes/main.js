@@ -1,6 +1,8 @@
 // creating new rouer and importing express to use
 const express = require("express")
 const router = express.Router()
+const request = require('request')
+
 
 // redirects to log in page
 const redirectLogin = (req, res, next) => {
