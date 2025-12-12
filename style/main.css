@@ -15,6 +15,14 @@ h1, p {
     color: lightblue;
 }
 
+p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: lightblue; 
+}
+
 .nav {
     display: flex;
     justify-content: center;
@@ -53,24 +61,30 @@ a:hover {
 }
 
 .regform {
+    width: 350px;
     padding: 30px;
     margin: 20px;
     background-color: darkblue;
     border-radius: 10px;
+    margin: 40px auto;
 }
 
 .appform {
+    width: 350px;
     padding: 30px;
     margin: 20px;
     background-color: darkblue;
     border-radius: 10px;
+    margin: 40px auto;
 }
 
 .logform {
+    width: 350px;
     padding: 30px;
     margin: 20px;
     background-color: darkblue;
     border-radius: 10px;
+    margin: 40px auto;
 }
 
 li {
