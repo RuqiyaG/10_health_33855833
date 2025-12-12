@@ -9,11 +9,12 @@
 <body>
     <h1>Login into <%=healthData.healthName%> </h1>
     <p><a href="/">HOME</a></p>
-   
-    <form action="/users/loggedin" method="POST">
+   <div class="logform">
+     <form action="/users/loggedin" method="POST">
         <p>Username: <input type="text" id="username" name="username" required></p>
-        <p>Password: <input type="text" id="password" name="password" required hidden></p>
-        <input type="submit" value="Log in">
-    </form>
+        <p>Password: <input type="password" id="password" name="password" required></p>
+        <input class="buttonA" type="submit" value="Log in">
+     </form>
+    </div>
 </body>
 </html>

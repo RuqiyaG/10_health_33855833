@@ -1,33 +1,90 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgreen;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+} 
+
+h1, p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: lightblue;
+}
+
+.nav {
     display: flex;
     justify-content: center;
-}
-
-h1 {
-    color: black;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
     text-align: center;
 }
 
-p {
-    color: black;
-    text-align: center;
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .buttonA {
-    color: white;
-    text-align: center;
-    padding: 12px 25px;
-    margin: 10px 0;
-    border-radius: 8px;
-    font-size: 10px;
+    background-color: lightblue;
+    color: darkgreen;
+    font-weight: bold;
 }
 
 .buttonB {
-    color: blue;
-    text-align: center;
-    padding: 12px 25px;
-    margin: 10px 0;
-    border-radius: 8px;
+    background-color: white;
+    color: darkgreen;
+    font-weight: bold;
 }
+    
+a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding:5px;
+}
+
+.regform {
+    padding: 30px;
+    margin: 20px;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+.appform {
+    padding: 30px;
+    margin: 20px;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+.logform {
+    padding: 30px;
+    margin: 20px;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+li {
+    text-align: center;
+}
+
+#first, #last, #email, #username, #password, #date, #reason, #time, #name, #searchbox {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    color: darkgreen;
+} 
+

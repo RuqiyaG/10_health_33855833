@@ -9,13 +9,14 @@
 <body>
     <h1>Book Appointment</h1>
     <p><a href="/">HOME</a></p>
-
-    <form action="/appointment/confirmapp" method="POST">
+    <div class="appform">
+     <form action="/appointment/confirmapp" method="POST">
         <p>Name: <input type="text" id="name" name="name" required></p>
         <p>Date: <input type="date" id="date" name="date" required></p>
         <p>Time: <input type="time" id="time" name="time" required></p>
         <p>Reason: <input type="text" id="reason" name="reason" required></p>
-        <input type="submit" value="Book">
-    </form>
+        <input class="buttonB" type="submit" value="Book">
+     </form>
+    </div>
 </body>
 </html>
